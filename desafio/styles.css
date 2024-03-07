@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: "League Spartan";
+}
+
+.fundo{
+  background-image: url(../programacao_web_I/Aula_4/secao_de_prova_social/images/bg-pattern-bottom-desktop.svg), url(../programacao_web_I/Aula_4/secao_de_prova_social/images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position:  bottom right, top left ;
+
+}
+
+.fundo{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 80%;
+margin: 0px auto 0px auto; 
+}
+
+
+.topo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  position: relative;
+}
+.topo div h1{
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(300, 43%, 22%);
+}
+.topo div p{
+  font-size: 1rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 600;
+}
+.estrelas h6::before{
+  content: " ";
+  width: 85px;
+  height: 16px;
+  display: inline-block;
+  background-image: url(../programacao_web_I/Aula_4/secao_de_prova_social/images/icon-star.svg);
+}
+.estrelas h6{
+  padding: 20px;
+  padding-top: 20px;
+  color: hsl(300, 43%, 22%);
+}
+.avaliacoes{
+  background:  hsl(300, 24%, 96%);
+  width: 95%;
+  height: 10%;
+  border-radius: 4px;
+ padding-bottom: 20px;
+
+
+}
+.avaliacoes {
+  margin-left: 0; /
+}
+
+.avaliacoes + .avaliacoes {
+  margin-left: 30px; 
+}
+
+.avaliacoes + .avaliacoes + .avaliacoes {
+  margin-left: 60px; 
+}
+
+.comentarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+}
+.comentarios .card {
+  width: 80%;
+  height: 90%;
+  margin: 10px;
+  padding: 20px;
+  background: hsl(300, 43%, 22%);
+  border-radius: 10px;
+}
+
+.comentarios img {
+  border-radius: 50%;
+}
+
+.card div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+ 
+}
+.card .pessoa {
+grid-column: -1;
+ 
+}
+
+.pessoa h4{
+  grid-column: 1/-1;
+  font-size: 1rem;
+  color:  hsl(333, 80%, 67%);
+  margin: 5px 0;
+
+}
+.pessoa h3 {
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+}
+.pessoa{
+  margin-right: 40px;
+}
+.comentarios p{
+  color: hsl(0, 0%, 100%);
+}
+
+.card{
+  margin-top:0 ;
+}
+.card + .card{
+  margin-top:30px ;
+}
+.card + .card+ .card{
+  margin-top:60px ;
+}
+
+
+
+
+footer{
+  display: flex;
+  background: #f8efef;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 90px;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width:600px){
+  .container{
+    width: 100%;
+    margin: 10px;
+  }
+  .comentarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 0px;
+  }
+}
+
+@media(max-width:500px){
+  .container{
+    width: 100%;
+    margin: 10px;
+  }
+  .comentarios {
+    display: grid;
+    grid-template-columns: 1fr  ;
+    gap: 0px;
+  }
+  .topo{
+    grid-template-columns: 1fr;
+  }
+  .avaliacoes+ .avaliacoes, .avaliacoes+ .avaliacoes+.avaliacoes{
+    margin: 0px;
+  }
+}
+
+
+
+
